@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">Try it</button>
+    <button id="btn2">Try ittttt!</button>
+    <input type="text" id="myInput">
+    <script>
+        let btn1 = document.getElementById("btn1")
+        let btn2 = document.getElementById("btn2")
+        let myInput=document.getElementById("myInput")
+        btn1.addEventListener("click", (e) => {
+            console.log(e.target);
+        })
+        btn2.addEventListener("click", (e) => {
+            console.log(e.target);
+        })
+
+        myInput.addEventListener("keydown", (e) => {
+                console.log("nhấn phím xuống",e.key);
+            })
+    </script>
+</body>
+
+</html>

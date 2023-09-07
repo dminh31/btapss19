@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #modal {
+            height: 100px;
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(168, 166, 163);
+            position: relative;
+            left: 35%;
+            visibility: hidden ;
+            /* display: none; */
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="text">Modal Example</h2>
+    <button id="btn">Open Modal</button>
+    <div id="modal">
+        <span >Some text in the Modal...</span>
+        <button id="btnClose" style="height: 20px;">x</button>
+    </div>
+    <script>
+        let text = document.getElementById("text")
+        let spanText = document.getElementById("modal")
+        let btn = document.getElementById("btn")
+        let btnClose = document.getElementById("btnClose")
+
+        btn.addEventListener("click", (e) => {
+            spanText.style.visibility = "visible"
+        })
+        btnClose.addEventListener("click", () => {
+            spanText.style.visibility = "hidden"
+        })
+    </script>
+</body>
+
+</html>
